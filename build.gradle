@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '1.5.9.RELEASE'
+}
+
+group 'net.zaquito'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    google()
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-web"
+}
