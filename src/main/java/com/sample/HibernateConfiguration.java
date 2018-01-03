@@ -1,6 +1,6 @@
 package com.sample;
 
-import com.sample.model.Person;
+import com.sample.model.Cerveza;
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,7 +26,7 @@ public class HibernateConfiguration {
     @Bean
     public SessionFactory sessionFactory() {
         return new LocalSessionFactoryBuilder(dataSource())
-                .addPackages(Person.class.getPackage().getName())
+                .addPackages(Cerveza.class.getPackage().getName())
                 .setProperty("hibernate.hbm2ddl.auto", "validate")
                 .buildSessionFactory();
     }
@@ -35,9 +35,9 @@ public class HibernateConfiguration {
     public DataSource dataSource() {
         SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
         dataSource.setDriverClass(com.mysql.jdbc.Driver.class);
-        dataSource.setUrl("jdbc:mysql://localhost:3306/test");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/tpbeer");
         dataSource.setUsername("root");
-        dataSource.setPassword("0210edu");
+        dataSource.setPassword("");
         return dataSource;
     }
 

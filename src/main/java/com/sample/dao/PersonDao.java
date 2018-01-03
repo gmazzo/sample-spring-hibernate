@@ -1,12 +1,12 @@
 package com.sample.dao;
 
-import com.sample.model.Person;
+import com.sample.model.Cerveza;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface PersonDao extends JpaRepository<Person, Integer> {
+public interface PersonDao extends JpaRepository<Cerveza, Integer> {
 
-    List<Person> findByName(String name);
+    List<Cerveza> findByName(String name);
 
 }
