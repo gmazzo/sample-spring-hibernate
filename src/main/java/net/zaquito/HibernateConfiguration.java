@@ -24,7 +24,7 @@ public class HibernateConfiguration {
     @Bean
     public SessionFactory sessionFactory() {
         return new LocalSessionFactoryBuilder(dataSource())
-                .addAnnotatedClasses(Person.class)
+                .addPackages(Person.class.getPackage().getName())
                 .buildSessionFactory();
     }
 
@@ -32,7 +32,7 @@ public class HibernateConfiguration {
     public DataSource dataSource() {
         SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
         dataSource.setDriverClass(com.mysql.jdbc.Driver.class);
-        dataSource.setUrl("jdbc:mysql://localhost:3306/concretepage");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/test");
         dataSource.setUsername("root");
         dataSource.setPassword("0210edu");
         return dataSource;
