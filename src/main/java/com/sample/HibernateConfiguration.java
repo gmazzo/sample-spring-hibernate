@@ -27,6 +27,7 @@ public class HibernateConfiguration {
     public SessionFactory sessionFactory() {
         return new LocalSessionFactoryBuilder(dataSource())
                 .addPackages(Person.class.getPackage().getName())
+                .setProperty("hibernate.hbm2ddl.auto", "validate")
                 .buildSessionFactory();
     }
 
