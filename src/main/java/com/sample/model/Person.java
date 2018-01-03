@@ -1,4 +1,4 @@
-package net.zaquito.model;
+package com.sample.model;
 
 import javax.persistence.*;
 

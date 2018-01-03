@@ -1,6 +1,6 @@
-package net.zaquito;
+package com.sample;
 
-import net.zaquito.model.Person;
+import com.sample.model.Person;
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

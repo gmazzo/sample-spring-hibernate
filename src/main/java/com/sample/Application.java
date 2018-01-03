@@ -1,4 +1,4 @@
-package net.zaquito;
+package com.sample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

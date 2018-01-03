@@ -1,7 +1,7 @@
-package net.zaquito.controllers;
+package com.sample.controllers;
 
-import net.zaquito.dao.PersonDao;
-import net.zaquito.model.Person;
+import com.sample.dao.PersonDao;
+import com.sample.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
